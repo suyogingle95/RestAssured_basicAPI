@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Suyog\AppData\Local\Temp\testng-eclipse-681458897\testng-customsuite.xml</span>
+                    <span>C:\Users\Suyog\AppData\Local\Temp\testng-eclipse-448411775\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +119,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="basic_api.HTTPMethods" class="method navigator-link" hash-for-method="getUsers">getUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="basic_api.HTTPMethods" class="method navigator-link" hash-for-method="testUsingPathParam">testUsingPathParam</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="basic_api.HTTPMethods" class="method navigator-link" hash-for-method="testUsingQueryParam">testUsingQueryParam</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -167,12 +177,26 @@
                   <span class="method-name">getUsers</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsingPathParam">
+                  </a> <!-- testUsingPathParam -->
+                  <span class="method-name">testUsingPathParam</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsingQueryParam">
+                  </a> <!-- testUsingQueryParam -->
+                  <span class="method-name">testUsingQueryParam</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Suyog\AppData\Local\Temp\testng-eclipse-681458897\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Suyog\AppData\Local\Temp\testng-eclipse-448411775\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -221,28 +245,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createUsers')
+data.setCell(0, 1, 'testUsingPathParam')
 data.setCell(0, 2, 'basic_api.HTTPMethods')
-data.setCell(0, 3, 3251);
+data.setCell(0, 3, 3800);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getUsers')
+data.setCell(1, 1, 'createUsers')
 data.setCell(1, 2, 'basic_api.HTTPMethods')
-data.setCell(1, 3, 1346);
+data.setCell(1, 3, 1309);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createUsersWithTestData')
+data.setCell(2, 1, 'createUsersFromFile')
 data.setCell(2, 2, 'basic_api.HTTPMethods')
-data.setCell(2, 3, 505);
+data.setCell(2, 3, 348);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createUsersFromFile')
+data.setCell(3, 1, 'createUsersWithTestData')
 data.setCell(3, 2, 'basic_api.HTTPMethods')
-data.setCell(3, 3, 384);
+data.setCell(3, 3, 316);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testUsingQueryParam')
+data.setCell(4, 2, 'basic_api.HTTPMethods')
+data.setCell(4, 3, 269);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getUsers')
+data.setCell(5, 2, 'basic_api.HTTPMethods')
+data.setCell(5, 3, 239);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -270,20 +302,28 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">basic_api.HTTPMethods</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">createUsers</span>
+                <span class="method-name">testUsingPathParam</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">testUsingQueryParam</span>
+                <span class="method-start">3818 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createUsers</span>
+                <span class="method-start">4093 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">createUsersFromFile</span>
-                <span class="method-start">3271 ms</span>
+                <span class="method-start">5412 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createUsersWithTestData</span>
-                <span class="method-start">3660 ms</span>
+                <span class="method-start">5762 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUsers</span>
-                <span class="method-start">4167 ms</span>
+                <span class="method-start">6081 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

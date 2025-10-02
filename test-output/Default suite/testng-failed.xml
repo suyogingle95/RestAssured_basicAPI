@@ -5,7 +5,8 @@
     <classes>
       <class name="basic_api.HTTPMethods">
         <methods>
-          <include name="createUsers"/>
+          <include name="testUsingPathParam"/>
+          <include name="testUsingQueryParam"/>
         </methods>
       </class> <!-- basic_api.HTTPMethods -->
     </classes>

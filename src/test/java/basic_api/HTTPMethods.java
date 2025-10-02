@@ -101,6 +101,37 @@ public class HTTPMethods {
 	            .log().all();
 			
 		}
+		
+		@Test
+	    public void testUsingPathParam() {
+	        given()
+	            .baseUri("https://jsonplaceholder.typicode.com")
+	            .basePath("/posts")
+	            .pathParam("id", 1)                 // 👈 PATH PARAM
+	            .log().uri()                        // Logs final URL after replacement
+	        .when()
+	            .get("/{id}")                       // Placeholder replaced by .pathParam()
+	        .then()
+	            .statusCode(200)
+	            .body("id", equalTo(1))
+	            .log().all();
+	    }
+
+	    @Test
+	    public void testUsingQueryParam() {
+	        given()
+	            .baseUri("https://jsonplaceholder.typicode.com")
+	            .basePath("/posts")
+	            .queryParam("userId", 1)               // 👈 QUERY PARAM
+	            .log().uri()                         // Logs final URL with ?page=2
+	        .when()
+	            .get()                               // No placeholder, query param auto-appended
+	        .then()
+	            .statusCode(200)
+	            .body("[0].id", equalTo(1))
+	            .body("data.size()", greaterThan(0))
+	            .log().all();
+	    }
 	
 
 	
